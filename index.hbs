@@ -1,0 +1,13 @@
+{{!< default}}
+
+<div class="uk-section uk-padding-remove-top uk-padding">
+    {{pagination}}
+</div>
+<div class="uk-width-1-1 uk-flex-center" uk-grid="masonry: true">
+    {{#foreach posts}}
+        {{> post_card}}
+    {{/foreach}}
+</div>
+
+
+

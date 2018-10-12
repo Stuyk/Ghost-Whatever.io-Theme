@@ -1,0 +1,10 @@
+<div class="uk-container uk-container-center uk-width-1-1">
+    <ul class="uk-pagination">
+        {{#if prev}}
+            <li><a href="{{page_url prev}}"><span class="uk-margin-small-right" uk-pagination-previous></span> Previous</a></li>
+        {{/if}}
+        {{#if next}}
+            <li class="uk-margin-auto-left"><a href="{{page_url next}}">Next <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+        {{/if}}
+    </ul>
+</div>

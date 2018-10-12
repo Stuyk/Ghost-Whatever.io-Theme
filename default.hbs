@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{meta_title}}</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.19/css/uikit.min.css" />
+    {{ghost_head}}
+</head>
+<body>
+    {{>header}}
+    <div class="uk-container uk-container-center uk-margin-auto-top uk-margin-auto-bottom uk-width-responsive">
+        <!-- Header -->
+        
+    
+        <!-- Body -->
+        <div class="uk-section uk-padding-remove-top uk-padding-small">
+            {{{body}}}
+        </div>
+        <!-- Footer -->
+        <div class="uk-section uk-padding-remove-top">
+            {{ghost_foot}}
+        </div>
+    </div>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.19/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.19/js/uikit-icons.min.js"></script>
+</body>
+</html>
