@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.19/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.19/js/uikit-icons.min.js"></script>
     <title>{{meta_title}}</title>
 
     <!-- UIkit CSS -->
@@ -12,21 +15,16 @@
 </head>
 <body>
     {{>header}}
-    <div class="uk-container uk-container-center uk-margin-auto-top uk-margin-auto-bottom uk-width-responsive">
-        <!-- Header -->
-        
-    
+
+    <div class="uk-container uk-container-center uk-padding-remove-left uk-padding-remove-right uk-margin-auto-top uk-margin-auto-bottom uk-width-responsive">
         <!-- Body -->
-        <div class="uk-section uk-padding-remove-top uk-padding-small">
+        <div class="uk-section uk-padding">
             {{{body}}}
         </div>
-        <!-- Footer -->
-        <div class="uk-section uk-padding-remove-top">
-            {{ghost_foot}}
-        </div>
     </div>
-    <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.19/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.19/js/uikit-icons.min.js"></script>
+
+    <!-- Footer -->
+    {{>footer}}
+    {{ghost_foot}}
 </body>
 </html>
